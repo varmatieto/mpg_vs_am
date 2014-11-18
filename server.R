@@ -16,7 +16,8 @@ shinyServer(function(input, output, session) {
      p1<-ggplot(mtcars, aes_string(y=input$y, x="mpg", color="am")) +
       geom_point(aes(shape = cyl), size = 4)
     
-    if (input$ten) p1<-p1+ geom_smooth(method=lm, size =1, se=F)      
+    if (input$ten) p1<-p1+ geom_smooth(method=lm, size =1, se=F,    # Don't add shaded confidence region
+                                       fullrange=T)      
     
     p1
     
