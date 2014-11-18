@@ -13,8 +13,7 @@ shinyServer(function(input, output, session) {
   
   output$plot <- renderPlot({
     
-    xx<-input$x
-    p1<-ggplot(mtcars, aes_string(y=xx, x="mpg", color="am")) +
+     p1<-ggplot(mtcars, aes_string(y=input$y, x="mpg", color="am")) +
       geom_point(aes(shape = cyl), size = 4)
     
     if (input$ten) p1<-p1+ geom_smooth(method=lm, size =1, se=F)      

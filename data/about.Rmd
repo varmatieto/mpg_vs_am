@@ -10,11 +10,12 @@ output: md_document
 
 This App is based on information related to the `mtcars` dataset (see below).
 
-The Apps shows the relationship between `mpg` (_miles per gallon_) and some __key predictors__ available in the dataset.  In particular, it looks at the relationship between mpg and transmission type `am` (automatic / manual).
+The Apps shows the relationship between `mpg` (_miles per gallon_) and some __key predictors__ available in the dataset.         
+In particular, it looks at the relationship between mpg and transmission type `am` (automatic / manual).
 
 Please select a variable to be shown in relationship with `mpg`. The different shape of the points outlines the number of cylinders; the colour of the points says the transmission type .
 
-The plot seems to show that in __small__ cars __manual__ trasmission is better, __over__ a certain size __automatic__ is worth.
+The plot seems to show that in small cars manual trasmission is better, over a certain size automatic is worth.
 
 
 #### Dataset description

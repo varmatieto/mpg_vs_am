@@ -11,7 +11,7 @@ shinyUI(navbarPage(" MPG_vs_AM ",
                                          ),
                    tabPanel("Plot",
                             sidebarPanel(
-                              selectInput('x', 'Variable', 
+                              selectInput('y', 'Variable', 
                                           choices = c("Displacement"= "disp",
                                                       "Weight" = "wt",
                                                       "Horsepower" = "hp"),
